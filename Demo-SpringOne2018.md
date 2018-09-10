@@ -8,7 +8,7 @@ These instructions guide you through deploying Spring Boot applications to Open 
 # Demo 1: Deploy the Spring Boot app to Liberty
 Branch: `git checkout demo1-SpringBootDeploy`
 1. Build the Spring Boot uber jar
-    1. `git clone https://github.com/spring-projects/spring-petclinic.git`
+    1. `git clone https://github.com/barecode/spring-petclinic.git`
     2. `cd spring-petclinic`
     3. `mvn package`
     4. `java -jar target/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar`
