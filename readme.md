@@ -2,7 +2,7 @@
 
 ## About this fork
 This is a forked PetClinic repo demonstrates using Open Liberty with Spring Boot. Instructions by conference:
-* [SpringOne 2018](Demo-SpringOne2018.md).
+* [SpringOne 2018](Demo-SpringOne2018.md)
 
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
