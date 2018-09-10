@@ -28,7 +28,7 @@ Branch: `git checkout demo1-SpringBootDeploy`
 
 # Demo 2: Produce a Liberty uber jar
 Branch: `git checkout demo2-libertyUberJar`
-1. Add the following to pom.xml build plugins:
+1. Add the following to the end of pom.xml build plugins section:
     ```xml
       <plugin>
             <groupId>io.openliberty.boost</groupId>
@@ -44,7 +44,7 @@ Branch: `git checkout demo2-libertyUberJar`
            </executions>
       </plugin>
     ```
-2. Run `mvn clean package`
+2. Run `./mvnw clean package`
 3. Run the uber jar: `java -jar target/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar`
 4. Browse to `http://localhost:8080/`
 
@@ -52,7 +52,7 @@ Branch: `git checkout demo2-libertyUberJar`
 
 # Demo 3: Create a Liberty based Docker image
 Branch: `git checkout demo3-dockerize`
-1. Add the following to pom.xml build plugins:
+1. Add the following to the end of pom.xml build plugins section:
     ```xml
       <plugin>
             <groupId>io.openliberty.boost</groupId>
@@ -67,7 +67,7 @@ Branch: `git checkout demo3-dockerize`
            </executions>
       </plugin>
     ```
-2. Run `mvn clean install`
+2. Run `./mvnw clean install`
 3. Run the Docker image: `docker run -p 9080:9080 spring-petclinic`
 4. Browse to `http://localhost:9080/`
 
