@@ -36,7 +36,6 @@ Branch: `git checkout demo2-libertyUberJar`
             <version>0.1</version>
             <executions>
               <execution>
-                    <phase>package</phase>
                     <goals>
                           <goal>package</goal>
                     </goals>
