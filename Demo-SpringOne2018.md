@@ -10,20 +10,20 @@ Branch: `git checkout demo1-SpringBootDeploy`
 1. Build the Spring Boot uber jar
     1. `git clone https://github.com/barecode/spring-petclinic.git`
     2. `cd spring-petclinic`
-    3. `mvn package`
-    4. `java -jar target/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar`
-    5. `open http://localhost:8080/`
+    3. Build `./mvnw package`
+    4. Run `java -jar target/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar`
+    5. Browse to `http://localhost:8080/`
 2. Install Liberty
-    1. `mvn io.openliberty.boost:boost-maven-plugin:0.1:start`
-    2. `open http://localhost:9080/` (See Open Liberty welcome page)
+    1. `./mvnw io.openliberty.boost:boost-maven-plugin:0.1:start`
+    2. Browse to `http://localhost:9080/` (See Open Liberty welcome page)
 3. Deploy the Spring Boot uber jar via dropins/spring
     1. `vi target/liberty/wlp/usr/servers/BoostServer/server.xml`
-    2. Add `<feature>jsp-2.3</feature>` to `<feature>springBoot-2.0</feature>`
+    2. Add `<feature>springBoot-2.0</feature>`
     3. `mkdir target/liberty/wlp/usr/servers/BoostServer/dropins/spring`
     4. `cp target/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar target/liberty/wlp/usr/servers/BoostServer/dropins/spring`
-    5. `open http://localhost:9080/` (See PetClinic)
+    5. Browse to `http://localhost:9080/` (See PetClinic)
 4. Cleanup
-    1. `mvn io.openliberty.boost:boost-maven-plugin:0.1:stop`
+    1. `./mvnw io.openliberty.boost:boost-maven-plugin:0.1:stop`
 
 
 # Demo 2: Produce a Liberty uber jar
