@@ -1,4 +1,5 @@
-# Demo instructions for [WebSphere on Pivotal Cloud Foundry](https://springoneplatform.io/2018/sessions/websphere-on-pivotal-cloud-foundry) at [SpringOne 2018](https://springoneplatform.io/2018/agenda)
+# Boost your Spring Boot app with Open Liberty 
+Demo instructions for [WebSphere on Pivotal Cloud Foundry](https://springoneplatform.io/2018/sessions/websphere-on-pivotal-cloud-foundry) at [SpringOne 2018](https://springoneplatform.io/2018/agenda)
 
 These instructions guide you through deploying Spring Boot applications to Open Liberty. Three demos are defined:
 1. deploying Spring Boot applications directly to Liberty
