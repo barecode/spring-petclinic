@@ -210,7 +210,6 @@
           <execution>
                 <goals>
                       <goal>docker-build</goal>
-                      <goal>package</goal>
                 </goals>
           </execution>
         </executions>
