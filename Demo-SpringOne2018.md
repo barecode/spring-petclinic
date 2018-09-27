@@ -108,5 +108,5 @@ CUR_DIR="$(cd $(dirname $0) && pwd)"
 
 
 
-# Demo 5 - `docker push`
+# Demo 5: `docker push`
 The demo given at Spring One does not use this repository, but a different fork of Spring Initializr. However, the steps taken in the demo work for this Docker image as well. The steps to create a Kubernetes cluster are not repeated here, as those steps will vary from Kubernetes vendor. To show a Spring Boot with Liberty Docker image running on Kubernetes, follow the instructions for your preferred Kubernetes environment.
