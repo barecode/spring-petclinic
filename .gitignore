@@ -1,3 +1,6 @@
+/Dockerfile
+/settings.xml
+/distZip/lib/*.jar
 target/*
 .settings/*
 .classpath
