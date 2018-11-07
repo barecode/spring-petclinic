@@ -7,16 +7,18 @@ These instructions guide you through building Docker images for Spring Boot appl
 3. A classpath based Docker image with Eclipse OpenJ9
 4. Compare the HotSpot and OpenJ9 images
 
+If needed, clone the project:
+    1. `git clone https://github.com/barecode/spring-petclinic.git`
+    2. `cd spring-petclinic`
+
 # Demo 1: A jar based Docker image
 Branch: `git checkout docker-jar`
 1. Build the image
-    1. `git clone https://github.com/barecode/spring-petclinic.git`
-    2. `cd spring-petclinic`
-    3. `git checkout docker-jar`
-    4. Build `./mvnw clean package -DskipTests`
-    5. Run `docker run -p 8080:8080 spring-petclinic`
-    6. Browse to `http://localhost:8080/` (See Petclinic)
-    7. Ctrl-C to stop the Docker container
+    1. `git checkout docker-jar`
+    2. Build `./mvnw clean package -DskipTests`
+    3. Run `docker run -p 8080:8080 spring-petclinic`
+    4. Browse to `http://localhost:8080/` (See Petclinic)
+    5. Ctrl-C to stop the Docker container
 2. Inspect the image size and layers
     1. `docker images`
     2. `docker history spring-petclinic` (note the 38MB layer)
@@ -40,7 +42,7 @@ Branch: `git checkout docker-classpath`
 Branch: `git checkout docker-classpath-openj9`
 1. Tag the previous image (used in Demo 4)
     1. `docker tag spring-petclinic spring-petclinic-hotspot`
-2. Build the project
+2. Build the image
     1. `git checkout docker-classpath-openj9`
     2. Build `./mvnw clean package -DskipTests`
     3. Run `docker run -p 8080:8080 spring-petclinic`
