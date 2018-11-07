@@ -59,4 +59,4 @@ Branch: `git checkout docker-classpath-openj9`
 2. In Terminal 1, run `docker stats`
 3. In Terminal 2, run `docker run --name hotspot -p 8080:8080 --rm spring-petclinic-hotspot`
 4. In Terminal 3, run `docker run --name openj9 -p 8081:8080 --rm spring-petclinic-openj9`  
-5. InTerminal 1, compare the memory usage of the images
+5. In Terminal 1, compare the memory usage of the images
