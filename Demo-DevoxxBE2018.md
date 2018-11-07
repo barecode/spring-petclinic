@@ -8,8 +8,8 @@ These instructions guide you through building Docker images for Spring Boot appl
 4. Compare the HotSpot and OpenJ9 images
 
 If needed, clone the project:
-    1. `git clone https://github.com/barecode/spring-petclinic.git`
-    2. `cd spring-petclinic`
+1. `git clone https://github.com/barecode/spring-petclinic.git`
+2. `cd spring-petclinic`
 
 # Demo 1: A jar based Docker image
 Branch: `git checkout docker-jar`
