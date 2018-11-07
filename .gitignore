@@ -1,4 +1,6 @@
 /Dockerfile
+/.dockerignore
+/notes
 /settings.xml
 /distZip/lib/*.jar
 target/*
