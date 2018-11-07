@@ -28,6 +28,7 @@
     <wro4j.version>1.8.0</wro4j.version>
 
     <jacoco.version>0.8.1</jacoco.version>
+    <boost.dockerizer>classpath</boost.dockerizer>
 
   </properties>
 
@@ -201,6 +202,18 @@
             <version>${webjars-bootstrap.version}</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>io.openliberty.boost</groupId>
+        <artifactId>boost-maven-plugin</artifactId>
+        <version>0.1.2-SNAPSHOT</version>
+        <executions>
+          <execution>
+                <goals>
+                      <goal>docker-build</goal>
+                </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
