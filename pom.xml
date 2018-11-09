@@ -28,7 +28,6 @@
     <wro4j.version>1.8.0</wro4j.version>
 
     <jacoco.version>0.8.1</jacoco.version>
-    <boost.dockerizer>classpath</boost.dockerizer>
 
   </properties>
 
@@ -207,6 +206,9 @@
         <groupId>io.openliberty.boost</groupId>
         <artifactId>boost-maven-plugin</artifactId>
         <version>0.1.2-SNAPSHOT</version>
+        <configuration>
+          <dockerizer>classpath</dockerizer>
+        </configuration>
         <executions>
           <execution>
                 <goals>
