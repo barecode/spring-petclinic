@@ -208,7 +208,7 @@
         <version>0.1.2-SNAPSHOT</version>
         <configuration>
           <dockerizer>classpath</dockerizer>
-          <tag>openj9</tag>
+          <tag>classpath-openj9</tag>
         </configuration>
         <executions>
           <execution>
