@@ -11,6 +11,14 @@ If needed, clone the project:
 1. `git clone https://github.com/barecode/spring-petclinic.git`
 2. `cd spring-petclinic`
 
+# Setup
+I usually pre-configure at least 4 terminal windows.: a primary window for demo 1-3 and then three more windows for demo 4. I recommend  disabling line-wrapping for the `docker stats` window. To do this on mac, run `tput rmam` (disables line wrapping). If you need to re-enable line wrapping, run `tput smam`.
+
+If demo'ing this at a conference, remember a few things:
+1. Your text is almost never 'too big'. Your default font size is REALLY SMALL on a projector (even a large one).
+2. Color contrast is really important. Try to use high-contrast settings. Black on White, or White on Black is safest.
+3. Bad things happen during demos. Network access is unreliable at conferences. Pre-build everything, take screen shots or build slides which the relevant information!
+
 # Demo 1: A jar based Docker image
 Branch: `git checkout docker-jar`
 1. Build the image
