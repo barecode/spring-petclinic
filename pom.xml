@@ -208,6 +208,7 @@
         <version>0.1.2-SNAPSHOT</version>
         <configuration>
           <dockerizer>classpath</dockerizer>
+          <tag>classpath-hotspot</tag>
         </configuration>
         <executions>
           <execution>
