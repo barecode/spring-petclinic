@@ -207,8 +207,9 @@
         <artifactId>boost-maven-plugin</artifactId>
         <version>0.1.2-SNAPSHOT</version>
         <configuration>
-          <dockerizer>classpath</dockerizer>
-          <tag>classpath-graalvm</tag>
+          <dockerizer>jar</dockerizer>
+          <dockerizerJVM>graalvm</dockerizerJVM>
+          <tag>jar-graalvm</tag>
         </configuration>
         <executions>
           <execution>
