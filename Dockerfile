@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk8-openj9
+FROM oracle/graalvm-ce:1.0.0-rc9
 VOLUME /tmp
 ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
