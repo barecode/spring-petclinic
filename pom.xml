@@ -208,7 +208,7 @@
         <version>0.1.2-SNAPSHOT</version>
         <configuration>
           <dockerizer>classpath</dockerizer>
-          <tag>graalvm</tag>
+          <tag>classpath-graalvm</tag>
         </configuration>
         <executions>
           <execution>
