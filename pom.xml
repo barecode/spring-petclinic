@@ -205,7 +205,7 @@
       <plugin>
         <groupId>io.openliberty.boost</groupId>
         <artifactId>boost-maven-plugin</artifactId>
-        <version>0.1.2-SNAPSHOT</version>
+        <version>0.1.2</version>
         <configuration>
           <dockerizer>classpath</dockerizer>
           <tag>classpath-graalvm</tag>
